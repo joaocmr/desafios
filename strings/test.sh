@@ -1,0 +1,1 @@
+python -m unittest discover -s tests/unit/ -p 'Test*.py' -t . || exit 1
