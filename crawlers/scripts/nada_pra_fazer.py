@@ -8,6 +8,7 @@ if len(sys.argv) != 2:
     print("Incorrent number of arguments")
     print("Script must be executed like: ")
     print("python nada_pra_fazer.py <subreddit1;subreddit2;subreddit3>")
+    sys.exit()
 
 crawler = RedditCrawler()
 

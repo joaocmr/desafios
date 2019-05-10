@@ -6,4 +6,6 @@ services:
     build: .
     volumes:
       - ./:/src
+    env_file:
+      - ./infra/envs.env
     tty: true

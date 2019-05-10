@@ -1,5 +1,9 @@
 import requests
 import sys
+
+sys.path.append("./commom")
+
+import defines
 from bs4 import BeautifulSoup
 
 class RedditCrawler:
@@ -32,7 +36,10 @@ class RedditCrawler:
         return soup
 
     def get_top_threads(self, subreddit_name):
-        url = "{}/r/subreddit_name".format(self.url)
+        url = "{}/r/{}".format(
+            self.url,
+            subreddit_name
+        )
         top_threads = []
         parser = self.__get_page_parser(url)
 
@@ -41,10 +48,10 @@ class RedditCrawler:
         )
 
         return [
-            thread for thread in subredit_threads if thread['data-score'] > defines._MIN_SCORE_
+            thread for thread in subredit_threads if int(thread['data-score']) > defines._MIN_SCORE_
         ]
 
-    def create_top_threads_list(self, subreddit_name, top_threads):
+    def create_top_threads_list(self, top_threads):
         top_threads_list = []
         for thread in top_threads:
             top_threads_list.append(
