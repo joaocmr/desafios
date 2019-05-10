@@ -4,6 +4,7 @@ services:
   
   crawler:
     build: .
+    command: sh -c 'python telegram/reddit_bot.py'
     volumes:
       - ./:/src
     env_file:

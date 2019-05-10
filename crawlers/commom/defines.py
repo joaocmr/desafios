@@ -13,3 +13,4 @@ def get_environ(tag):
 
 _REDDIT_URL_ = get_environ('REDDIT_URL')
 _MIN_SCORE_ = int(get_environ('MIN_SCORE'))
+_BOT_TOKEN_ = get_environ("BOT_TOKEN")
