@@ -1,0 +1,9 @@
+version: '2.1'
+
+services:
+  
+  crawler:
+    build: .
+    volumes:
+      - ./:/src
+    tty: true
