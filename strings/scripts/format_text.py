@@ -8,7 +8,7 @@ if len(sys.argv) == 4:
     f = open(sys.argv[1])
     string = f.read()
     MAX_WORDS = int(sys.argv[2])
-    JUSTIFY = bool(sys.argv[3])
+    JUSTIFY = bool(int(sys.argv[3]))
 
 else:
     print("Wrong number of arguments\n")
