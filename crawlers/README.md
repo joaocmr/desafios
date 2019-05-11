@@ -1,6 +1,6 @@
 <b>SOBRE O PROJETO</b>
 
-Neste projeto foi desenvolvido um bot que realiza crawl do web-site reddit e recebe açes através do telegram.<br>Recebendo o comando /NadaPraFazer subreddit1;subreddit2 o bot pega as threads <br> dos subreddits informados com mais de 5000 upvotes (quantidade definida por variável de ambiente), e <br>os informa a pessoa que o solicitou
+Neste projeto foi desenvolvido um bot que realiza crawl do web-site reddit e recebe ações através do telegram.<br>Recebendo o comando /NadaPraFazer subreddit1;subreddit2 o bot pega as threads <br> dos subreddits informados com mais de 5000 upvotes (quantidade definida por variável de ambiente), e <br>os informa a pessoa que o solicitou
 
 <b>RODANDO O PROJETO</b>
 
