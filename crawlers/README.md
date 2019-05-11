@@ -4,8 +4,8 @@ O projeto tem como objetivo desenvolver um bot do telegram que realiza crawl do 
 
 <b>RODANDO O PROJETO</b>
 
-O projeto utilizar docker para instalação de dependências e configurações das variáveis de ambiente. 
-Ao rodar o comando docker-compose up --build é levantado o container com nome de "crawler". 
-Dessa forma, após o container ser levantado, ao acessar o bot do telegram com nome "desafia_idwall_bot", disponível em telegram.me/desafio_idwall_bot, e utilizar o comando /NadaPraFazer subreddit1;subreddit2;subreddit3 o bot responde com as top threads dos subreddits solicitados.
+O projeto utilizar docker para instalação de dependências e configurações das variáveis de ambiente.<br>
+Ao rodar o comando docker-compose up --build é levantado o container com nome de "crawler".<br>
+Dessa forma, após o container ser levantado, ao acessar o bot do telegram com nome "desafia_idwall_bot", disponível em telegram.me/desafio_idwall_bot, e utilizar o comando /NadaPraFazer subreddit1;subreddit2;subreddit3 o bot responde com as top threads dos subreddits solicitados.<br>
 
 Para rodar os testes do projeto basta entrar no container e rodar o shell script ./test.sh
