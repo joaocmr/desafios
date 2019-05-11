@@ -10,7 +10,7 @@ O projeto utiliza docker para instalção de dependências<br>
 Ao rodar o comando docker-compose up --build é leventando o container do projeto com nome de "formater".<br> 
 Entrando nesse container através do comando docker exec -it *código_do_container* bash é possível utilizar o script e rodar os testes do projeto.<br>
 O script deve ser rodado da seguinte forma:
-python scripts/format_text.py *caminho_para_o_txt_a_ser_formatado* *quantidade_de_palavras_por_linha* *justificado_ou_nao(0 ou 1)*
+python scripts/format_text.py #caminho_para_o_txt# #quantidade_de_palavras_por_linha# #justificado_ou_nao(0 ou 1)#
 
 Dessa forma, é gerado o arquivo de output dentro da pasta ./data/output<br>
 
