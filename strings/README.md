@@ -2,7 +2,7 @@
 
 Este projeto tem como objetivo a formatação de um texto.<br>
 
-Através de um script, um texto sem formatação é manipulado de forma que suas linhas tenham no <br>máximo X palavras (quantidade definida como argumento do script) e seja justificado ou não <br>(parametro também definido através de argumento)<br>
+Através de um script, um texto sem formatação é manipulado de forma que suas linhas tenham no <br>máximo X palavras (quantidade definida como argumento do script) e seja justificado ou não <br>(parêmetro também definido através de argumento)<br>
 
 <b>RODANDO O PROJETO</b>
 
