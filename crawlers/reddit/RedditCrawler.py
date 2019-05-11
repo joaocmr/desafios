@@ -11,8 +11,7 @@ class RedditCrawler:
     def __init__(self):
         self.url = defines._REDDIT_URL_
 
-    def __request_page_text(self, url):
-
+    def request_page_text(self, url):
         res = requests.get(
             url=url,
             headers={'User-agent': 'Bot'}
@@ -24,12 +23,11 @@ class RedditCrawler:
                     url, res.text
                 )
             )
-        
         return res.text
 
-    def __get_page_parser(self, url):
+    def get_page_parser(self, url):
         soup = BeautifulSoup(
-            self.__request_page_text(url),
+            self.request_page_text(url),
             'html.parser'
         )
 
@@ -41,7 +39,7 @@ class RedditCrawler:
             subreddit_name
         )
         top_threads = []
-        parser = self.__get_page_parser(url)
+        parser = self.get_page_parser(url)
 
         subredit_threads = parser.find_all(
             "div", attrs={"class": "thing"}
