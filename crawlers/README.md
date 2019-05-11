@@ -4,7 +4,7 @@ Neste projeto foi desenvolvido um bot que realiza crawl do web-site reddit e rec
 
 <b>RODANDO O PROJETO</b>
 
-O projeto utilizar docker para instalação de dependências e configurações das variáveis de ambiente.<br>
+O projeto utiliza docker para instalação de dependências e configuração das variáveis de ambiente.<br>
 Ao rodar o comando docker-compose up --build é levantado o container com nome de "crawler".<br>
 Dessa forma, após o container ser levantado, ao acessar o bot do telegram com nome "desafio_idwall_bot", disponível em telegram.me/desafio_idwall_bot, e utilizar o comando /NadaPraFazer subreddit1;subreddit2;subreddit3 o bot responde com as top threads dos subreddits solicitados.<br>
 
